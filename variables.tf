@@ -15,6 +15,12 @@ variable "policy_arns" {
   default     = []
 }
 
+variable "assume_role_policy" {
+  description = "ARNs of IAM policies for the role"
+  type        = list
+  default     = []
+}
+
 variable "attach_ssm_policy" {
   description = "Toggles attachment of the AmazonSSMManagedInstanceCore policy to allow usage of AWS SSM"
   type        = string

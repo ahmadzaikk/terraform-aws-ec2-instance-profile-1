@@ -3,10 +3,9 @@ variable "name" {
   type        = string
 }
 
-variable "policy_jsons" {
-  description = "Valid JSON policies for the role"
-  type        = list
-  default     = []
+variable "policy" {
+  default     = ""
+  description = "The policy document."
 }
 
 variable "policy_arns" {

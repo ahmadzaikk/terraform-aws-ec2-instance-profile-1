@@ -41,6 +41,6 @@ variable "path" {
 
 variable "tags" {
   description = "Tags that should be assigned to the created resources whenever possible"
-  type        = map
+  type        = map(string)
   default     = {}
 }
